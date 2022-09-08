@@ -1,0 +1,67 @@
+/* general */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+.retangles5, .retangles4, .retangles25{
+    width: calc(100% / 3);
+    height: 100vh;
+}
+
+/* first section 5 retangles  */
+.retangle-first-section{
+    width: 100%;
+    height: calc(100% / 5);
+}
+
+/* second section 4 retangles  */
+.retangle-second-section{
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+
+/* third section 25 rectangles  */
+.retangle-third-section{
+    width: calc(100% / 5);
+    height: calc(100% / 5);
+    float: left;
+}
+
+
+/* media  1200px*/
+@media only screen and (max-width: 1200px) {
+    .retangle-third-section{
+        width: calc(100% / 3);
+        height: calc(100% / 9);
+        float: left;
+    }
+}
+
+/* media  800px*/
+@media only screen and (max-width: 800px) {
+    
+}
+
+/* media  200px*/
+@media only screen and (max-width: 200px) {
+    .retangles4, .retangles25{
+        display: none;
+    }
+    .retangles5{
+        width: 100%;
+        height: 100%;
+    }
+    .retangle-first-section{
+        width: 100%;
+        height: calc(100% / 3);
+    }
+
+}

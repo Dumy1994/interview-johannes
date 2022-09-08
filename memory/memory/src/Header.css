@@ -1,0 +1,9 @@
+.header-container{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
+.header-container img{
+    height: 85px;
+    margin-top: 10px;
+} 
